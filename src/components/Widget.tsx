@@ -1,5 +1,5 @@
 'use client'
-import { Check, Rocket, X } from "lucide-react";
+import {  ArrowRight, Check, Rocket, X } from "lucide-react";
 import { Notification } from "./Notification";
 
 export function Widget() {
@@ -23,7 +23,7 @@ export function Widget() {
                     <Notification.Content text="Você recebeu um convite para fazer parte da empresa Rockeseat."/>
                     <Notification.Actions>
                         <Notification.Action onClick={() => {}} icon={X}/>
-                        <Notification.Action onClick={() => {}} icon={Check}/>
+                        <Notification.Action onClick={() => {}} icon={Check} className="bg-violet-500 hover:bg-violet-600 dark:bg-violet-500 dark:hover:bg-violet-600"/>
                     </Notification.Actions>
                 </Notification.Root>
 
@@ -31,7 +31,7 @@ export function Widget() {
                     <Notification.Icon icon={Rocket} />
                     <Notification.Content text="Você recebeu um convite para fazer parte da empresa Rockeseat."/>
                     <Notification.Actions>
-                        <Notification.Action onClick={() => {}} icon={X}/>
+                        <Notification.Action onClick={() => {}} icon={ArrowRight} className="bg-emerald-500 hover:bg-emerald-600 dark:bg-emerald-500 dark:hover:bg-emerald-600"/>
                     </Notification.Actions>
                 </Notification.Root>
             </div>
